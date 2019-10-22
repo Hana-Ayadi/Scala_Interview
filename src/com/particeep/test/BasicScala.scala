@@ -46,11 +46,14 @@ object BasicScala {
   // Use of recursivity in function power to decrease the complexity of the program
   def power(i: Int, n: Int): Int = {
 
-    if (n == 0) return 1;
-    else if (n % 2 == 0) {
+    if (n == 0) {
+      return 1;
+    } else if (n % 2 == 0) {
       var m: Int = BasicScala.power(i, n / 2)
       return m * m;
-    } else return (BasicScala.power(i, (n - 1)) * i);
+    } else {
+      return (BasicScala.power(i, (n - 1)) * i);
+    }
 
   }
 
