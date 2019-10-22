@@ -1,0 +1,40 @@
+
+1) Explain REST and RESTful:
+
+REST: Rest is a style  of software architecture, it's about client-server communication based on Http protocol  
+RESTful:Web services based on the REST architectural style uses URI and http methods (CRUD)
+
+
+2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
+
+The client requests a specific ressource from the server which does not have any information about
+the client then the server responds to that request under the form Json or XML which aims to
+tansmit structured data over a network connection using Http protocol.
+
+3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
+
+GET: resuest that aims to obtain or read data and not to modify it. If the ressource is found on the server Http Response will be 200(OK) else 404(NOT FOUND)
+it could return also 400(BAD REQUEST) if the GET request is not well formed.
+PUT: request  used to update an existing ressources.if the update is successeful the http response is 200(Ok)
+POST: request used to create a new ressource. if the ressource is well created the http Respense will be 201(Created)
+DELETE: request used to delete ressource.if the ressource doessn't exist the http Response is 404 (NOT FOUND) else if it is deleted 200 (OK)
+
+4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP ?
+
+In stateless protocol there is no record of the state is saved at server end.Client send request to the server and server response back according to current state.
+A stateful protocol is a protocol which is able to remember and store details of the interactions by keeping track of the connection information.
+=> Http is a stateless protocol
+5) Explain the difference between a GET and a POST (like how are sent the parameters)
+In Get method , parameters are send on the url 
+In POST method,  parameters are saved in the request body and do not apprear in the url
+
+6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+
+1. I try to understund the general context of the problem
+2. Extract the different fonctionalities that I must work on.
+3. Identify Problem's functions 
+4. Thinking manually about the solution
+5. Adding logs  and analyse the result
+6. Adding breakpoints and debbuging code to find the reason of the problem
+7. Searching solutions on Internet (Forums,StackOverFlow,Github...) 
+8. Asking for help 
